@@ -1,0 +1,174 @@
+@media screen and (max-width:1500px) {
+    nav{
+        padding: 0px;
+    }
+    li a{
+        padding: 0 50px;
+    }
+    nav ul{
+        font-size: 1rem;
+    }
+    ul:nth-child(2) {
+        font-size: 2.3rem;   
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    li a{
+        padding: 0 30px;
+    }
+    nav ul{
+        font-size: 0.9rem;
+    }
+    ul:nth-child(2) {
+        font-size: 2rem;   
+    }
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .intro{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px){
+    ul:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    ul:nth-child(odd){
+        display: none;
+    }
+    ul:last-child{
+        display: block;
+    }
+    .intro{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    li a{
+        padding: 0 20px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header1{
+        font-size: 2rem;
+    }
+    .projects .header2{
+        font-size: 1rem;
+    }
+    .text{
+        font-size: 0.9rem;
+    }
+    li a{
+        padding: 0 10px;
+        font-size: 0.8rem;
+    }
+    nav ul{
+        font-size: 0.8rem;
+    }
+    ul:nth-child(2) {
+        font-size: 1.5rem;   
+    }
+}
+
+@media screen and (max-width: 770px){
+    .header1{
+        font-size: 3.6rem;
+    }
+    .projects .header2{
+        font-size: 2.4rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .cardDescription{
+        font-size: 1rem;
+    }
+    .card{
+        padding: 10px;
+        width: 330px;
+    }
+    .welcomeImage{
+        width: 350px;
+        height: 350px;
+    }
+    li a{
+        padding: 0 5px;
+        font-size: 0.7rem;
+    }
+    nav ul{
+        font-size: 0.7rem;
+    }
+    ul:nth-child(2) {
+        font-size: 1.2rem;   
+    }
+    .triple-dash{
+        font-size: 2.6rem;
+    }
+    #myLogo{
+        width: 40px;
+        height: 40px;
+    }
+    li{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 550px){
+    .welcomeImage{
+        width: 280px;
+        height: 280px;
+    }
+    .header1{
+        font-size: 3rem;
+    }
+    .triple-dash{
+        font-size: 2.4rem;
+    }
+    #myLogo{
+        width: 35px;
+        height: 35px;
+    }
+    li{
+        height: 40px;
+    }
+}
+@media screen and (max-width: 400px){
+    .welcomeImage{
+        width: 220px;
+        height: 220px;
+    }
+    .header1{
+        font-size: 2.6rem;
+    }
+    .text{
+        font-size: 0.8rem;
+    }
+    .cardDescription{
+        font-size: 0.8rem;
+    }
+    .card{
+        width: 250px;
+    }
+    .cardTitle{
+        font-size: 1.5rem;
+    }
+    .projects .header2{
+        font-size: 1.9rem;
+    }
+    .cardButton{
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+}
