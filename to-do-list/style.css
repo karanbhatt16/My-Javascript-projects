@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg,rgb(206, 15, 155),rgb(28, 22, 209));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.header img{
+    padding-left: 30px;
+    width: 45px;
+}
+.input{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.input input{
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 30px;
+    border: rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
+    outline: none;
+}
+.input .add{
+    position: absolute;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    right: 0;
+    background-color: #ff5945;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 6px;
+}
+
+.checked::before{
+    background-image: url(images/checked.png);
+    height: 25px;
+    width: 25px;
+    left: 11px;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+.checked span{
+    text-decoration: none !important;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul li span:hover{
+    background: rgb(219, 219, 219);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+
+/* pop up message css */
+
+.messageBox{
+    position: absolute;
+    top: 0; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.message img{
+    width: 22px;
+    padding-right: 10px;
+}
+
+.message{
+    z-index: 1;
+    width: 400px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    transform: translateY(-70%);
+    animation: movedown 0.1s linear forwards;
+}
+
+@keyframes movedown{
+    100%{
+        transform: translateY(20%);
+    }
+}

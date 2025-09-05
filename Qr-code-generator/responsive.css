@@ -1,0 +1,33 @@
+@media screen and (max-width:850px) {
+    .container{
+        width: 500px;
+    }
+}
+@media screen and (max-width:650px) {
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px) {
+    .img-box.show {
+        max-height: 270px;   
+    }
+    .img-box {
+        width: 270px;
+    }
+    .container:first-child {
+        font-size: 13px;  
+    }
+    .container{
+        padding: 15px;
+    }
+    button{
+        font-size: 17px;
+    }
+    input{
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 15px;
+    }
+}

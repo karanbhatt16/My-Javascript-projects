@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial,sans-serif;
+    z-index: -1;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2
+}
+#videoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Adjust opacity here */
+    z-index: -1;
+}
+
+.show{
+    display: block;
+}
+
+.error > div{
+    cursor: pointer;
+}
+
+.error{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: rgb(253, 79, 79);
+    color: azure;
+}
+
+.cross{
+    font-size: 17px;
+}
+.hide{
+    display: none;
+}
+
+.card{
+    margin: auto;
+    padding: 20px;
+    height: fit-content;
+    width: 430px;
+    background-image: linear-gradient(135deg, #3cbd44, #1365d1);
+    border-radius: 4%;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.search>input{
+    height: 3.5rem;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 100px;
+}
+.search>img{
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    pointer-events: none;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.weather-icon{
+    width: 180px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+
+.humidity img{
+    height: 38px;
+}
+
+.text{
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.text p:first-child{
+    font-size: 22px;
+}
+
+.wind{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.wind img{
+    height: 38px;
+}

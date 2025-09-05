@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <title>To-Do List App</title>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="container">
+      <!-- message box -->
+      <div class="messageBox"></div>
+      <!-- TO-Do list container -->
+      <div class="list">
+        <!-- heading -->
+        <div class="header">
+          <h1>To-Do List</h1>
+          <img src="images/book.png" alt="book" />
+        </div>
+        <!-- Task input -->
+        <div class="input">
+          <input type="text" placeholder="Add your text" spellcheck="true" />
+          <button class="add">ADD</button>
+        </div>
+        <!-- list in which tasks are added dynamically -->
+        <ul class="list-container"></ul>
+      </div>
+    </div>
+    <!-- script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
